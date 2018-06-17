@@ -3,23 +3,24 @@
 namespace App\Http\Controllers;
 
 
+
 use App\Task;
 
 class TasksController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-
+        // /tasks
         $tasks = Task::all();
         return view('tasks.index', compact('tasks'));
 
     }
 
-    public function show(Task $task) // Task::finf(wildcard);
-    {
-        return view('tasks.show', compact('task'));
-
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -41,7 +42,18 @@ class TasksController extends Controller
         // POST /tasks
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+       // GET /tasks/id
+        return view('tasks.show', compact('task'));
 
+    }
 
     /**
      * Show the form for editing the specified resource.
