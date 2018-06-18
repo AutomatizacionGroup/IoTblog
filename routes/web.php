@@ -5,7 +5,7 @@ Route::get('/tasks/{task}'  , 'TasksController@show'    );
 Route::get('/'              , 'PostsController@index'   );
 //Route::get('/posts/{post}'  , 'PostsController@show'    );
 Route::get('/posts/create'  , 'PostsController@create'  );
-Route::post('/posts'        ,'PostController@store'     );
+Route::post('/posts'        ,'PostsController@store'     );
 
 Auth::routes();
 

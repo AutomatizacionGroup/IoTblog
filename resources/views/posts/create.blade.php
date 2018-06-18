@@ -8,18 +8,28 @@
         <hr>
 
         <form method="POST" action="/posts">
+        {{ csrf_field()}}
         
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" name='title'>
+                <input type="text" class="form-control" id="title" name='title' required>
             </div>
 
             <div class="form-group">
                 <label for="Body">Body</label>
-                <textarea name="body" id="body" class="form-control"></textarea>
+                <textarea name="body" id="body" class="form-control" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Publish</button>
         </form>
+
+        <div class="alert alert-error">
+        
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+        </ul>
+        
+        </div>
     </div>
 @endsection
