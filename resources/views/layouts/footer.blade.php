@@ -1,5 +1,5 @@
 <footer class="blog-footer">
-      <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>This space is maintained by <a href="https://www.automatizacionGroup.com">Automatizacion Group</a>.</p>
       <p>
         <a href="#">Back to top</a>
       </p>
