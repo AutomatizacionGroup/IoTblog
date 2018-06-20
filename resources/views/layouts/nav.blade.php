@@ -4,9 +4,9 @@
         
         <nav class="nav blog-nav">
           <a class="nav-link active" href="/">The Internet of Things</a>
-          <a class="nav-link" href="/">IoT Consumer</a>
-          <a class="nav-link" href="/">IoT Industry</a>
-          <a class="nav-link" href="/">IoT Value</a>
+          <a class="nav-link" href="/iotconsumer">IoT Consumer</a>
+          <a class="nav-link" href="/iotindustry">IoT Industry</a>
+          <a class="nav-link" href="/iotvalue">IoT Value</a>
           <a class="nav-link" href="/todo">my IoT To-Do List</a>
 
 						@auth

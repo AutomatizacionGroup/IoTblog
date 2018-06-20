@@ -1,15 +1,18 @@
-<div class="blog-post">
 
-  <h2 class="blog-post-title">
-    
-    <a href="/posts/{{ $post->id }}">
-      {{ $post->title }}</h2>
-    </a>
+    <div class="card">
 
-  <p class="blog-post-meta">
-    {{ $post->created_at->toDayDateTimeString() }} 
-  </p>
+        <h5 class="card-header">{{ $post->title }}</h5>
 
-    {{ $post->body }}
+        <div class="card-body">
 
-</div>
+          <h5 class="card-title">{{ $post->created_at->toDayDateTimeString() }}</h5>
+
+          <p class="card-text">{{ substr($post->body, 0, 600)}} ...</p>
+
+          <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read Post</a>
+
+        </div>
+
+      </div>
+
+

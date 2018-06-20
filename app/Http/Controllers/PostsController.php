@@ -41,4 +41,33 @@ class PostsController extends Controller
 
         return redirect('/');
     }
+
+    public function iothome(){
+
+        $viewTitle= 'Consumer IoT';  
+        $posts = Post::latest()->where('category', 1)->get();
+        
+        return view('posts.index', compact('posts'));
+
+    }
+
+    public function iotindustry(){
+        
+        $viewTitle= 'Industry IoT';  
+        
+        $posts = Post::latest()->where('category', 2)->get();
+        
+        return view('posts.index', compact('posts','viewTitle'));
+
+    }
+
+    public function iotvalue(){
+
+        $viewTitle= 'The Value of IoT';
+        
+        $posts = Post::latest()->where('category', 4)->get();
+        
+        return view('posts.index', compact('posts'));
+
+    }
 }
