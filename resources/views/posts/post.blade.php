@@ -11,6 +11,8 @@
 
           <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read Post</a>
 
+            <hr>
+        
         </div>
 
       </div>

@@ -56,7 +56,7 @@
       <!-- ################################################################################################ -->
       <ul class="clear">
         <li class="active"><a href="/iothome">Home</a></li>
-        <li><a class="drop" href="#">Pages</a>
+        {{--  <li><a class="drop" href="#">Pages</a>
           <ul>
             <li><a href="pages/gallery.html">Gallery</a></li>
             <li><a href="pages/full-width.html">Full Width</a></li>
@@ -64,15 +64,15 @@
             <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
             <li><a href="pages/basic-grid.html">Basic Grid</a></li>
           </ul>
-        </li>
+        </li>  --}}
         <li><a class="drop" href="/iotconsumer">IoT Consumer</a>
           <ul>
             <li><a href="/iotconsumer">Articles</a></li>
-            <li><a class="drop" href="#">my articles</a>
+            <li><a class="drop" href="/posts/create">my articles <i class="fa fa-lock"></i></a>
               <ul>
-                <li><a href="#">view my articles</a></li>
+                <li><a href="#">view my articles (coming soon)</a></li>
                 <li><a href="#">create article</a></li>
-                <li><a href="#">Edit articles</a></li>
+                <li><a href="#">Edit articles (coming soon)</a></li>
               </ul>
             </li>
           </ul>
@@ -80,17 +80,17 @@
         <li><a class="drop" href="/iotindustry">IoT Industry</a>
           <ul>
             <li><a href="/iotindustry">Articles</a></li>
-            <li><a class="drop" href="#">My articles</a>
+            <li><a class="drop" href="#">My articles <i class="fa fa-lock"></i></a>
               <ul>
-                <li><a href="#">view my articles</a></li>
-                <li><a href="#">create article</a></li>
-                <li><a href="#">Edit articles</a></li>               
+                <li><a href="/iotindustry">view my articles (coming soon)</a></li>
+                <li><a href="/posts/create">create article</a></li>
+                <li><a href="#">Edit articles (coming soon)</a></li>               
               </ul>
             </li>
           </ul>
         </li>
         <li><a href="/iotvalue">IoT Value</a></li>
-        <li><a class="drop" href="">my Iot Plan</a>
+        <li><a class="drop" href="">my Iot Plan <i class="fa fa-lock"></i></a>
           <ul>
             <li><a href="/todo">Todo List</a></li>
             <li><a href="/todo">my IoT Calendar</a></li>

@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-        <div class="col-sm-8 col-lg-6 blog-main ">
+<div class="wrapper row3">
+    <main class="hoc container clear"> 
+        <div class="content"> 
 
 
 
@@ -17,6 +19,8 @@
           </nav>
 
         </div><!-- /.blog-main -->
+    </main>
+  </div>
 
 @endsection
 
