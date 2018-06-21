@@ -9,11 +9,12 @@ Route::get  ('/posts/create'          ,'PostsController@create'       )->name('c
 Route::post ('/posts'                 ,'PostsController@store'        )->name('posts');
 Route::get  ('/posts/{post}'          ,'PostsController@show'         );
 Route::post ('posts/{post}/comments'  ,'CommentsController@store'     );
-Route::get  ('/home'                  ,'PostsController@home'          )->name('home');
-Route::get  ('/iotconsumer'           ,'PostsController@iothome'       )->name('iothome');
-Route::get  ('/iotindustry'           ,'PostsController@iotindustry'   )->name('iotindustry');
-Route::get  ('/iotvalue'              ,'PostsController@iotvalue'      )->name('iotvalue');
-Route::get  ('/original'            ,'homecontroller@original'      )->name('original');
+Route::get  ('/home'                  ,'PostsController@home'         )->name('home');
+Route::get  ('/iotconsumer'           ,'PostsController@iothome'      )->name('iothome');
+Route::get  ('/iotindustry'           ,'PostsController@iotindustry'  )->name('iotindustry');
+Route::get  ('/iotvalue'              ,'PostsController@iotvalue'     )->name('iotvalue');
+Route::get  ('/original'              ,'homecontroller@original'      )->name('original');
+Route::get  ('/iothome'               ,'homecontroller@iothome'       )->name('iothome');
 
 Auth::routes();
  

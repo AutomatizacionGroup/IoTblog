@@ -1,46 +1,27 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--
+Template Name: Cytocean
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<title>Cytocean</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
 
-    <title>Blog Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-
-    <!-- Custom styles for this template -->
-    <link href="/css/blog.css" rel="stylesheet">
-  </head>
-
-  <body>
-        @include('layouts.nav')
+  <body id="top">
         
-        @include('layouts.head')
+    @include('layouts.nav')
+        
+    @yield('content')
 
 
-    <div class="container">
-
-      <div class="row">
-      @yield('content')
-
-      @include('layouts.sidebar')
-
-</div><!-- /.row -->
-
-</div><!-- /.container -->
-
-    </div>
-    
-    </main>
-
-
-
-@include('layouts.footer')
+    @include('layouts.footer')
 
 
 

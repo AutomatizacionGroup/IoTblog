@@ -22,15 +22,36 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <div class="fl_left">
       <ul>
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li><i class="fa fa-envelope-o"></i> info@iotsense.io</li>
       </ul>
     </div>
     <div class="fl_right">
       <ul>
-        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+          @auth
+          <li class="nav-link">
+          <a href="#">{{ Auth::user()->name }}</a>
+            <ul class="dropdown">
+              <li><a href="">Profile</a></li>
+              
+              <li><a href="{{ route('admin.dashboard') }}">Panel</a></li>
+              
+              <li>
+                <a href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+              </li>
+
+            </ul>
+          
+          </li>
+        
+        @endauth
       </ul>
     </div>
     <!-- ################################################################################################ -->
@@ -43,8 +64,8 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="hoc clear">
     <div id="logo"> 
       <!-- ################################################################################################ -->
-      <h1><a href="/original">Cytocean</a></h1>
-      <p>Nullam consequat laoreet</p>
+      <h1><a href="/original">IoT Space</a></h1>
+      <p>develop yourself on IoT Vangard</p>
       <!-- ################################################################################################ -->
     </div>
     <nav id="mainav" class="clear"> 
@@ -60,23 +81,39 @@ Licence URI: http://www.os-templates.com/template-terms
             <li><a href="pages/basic-grid.html">Basic Grid</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">Dropdown</a>
+        <li><a class="drop" href="/iotconsumer">IoT Consumer</a>
           <ul>
-            <li><a href="#">Level 2</a></li>
-            <li><a class="drop" href="#">Level 2 + Drop</a>
+            <li><a href="/iotconsumer">Articles</a></li>
+            <li><a class="drop" href="#">my articles</a>
               <ul>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
-                <li><a href="#">Level 3</a></li>
+                <li><a href="#">view my articles</a></li>
+                <li><a href="#">create article</a></li>
+                <li><a href="#">Edit articles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="drop" href="/iotindustry">IoT Industry</a>
+          <ul>
+            <li><a href="/iotindustry">Articles</a></li>
+            <li><a class="drop" href="#">My articles</a>
+              <ul>
+                <li><a href="#">view my articles</a></li>
+                <li><a href="#">create article</a></li>
+                <li><a href="#">Edit articles</a></li>               
               </ul>
             </li>
             <li><a href="#">Level 2</a></li>
           </ul>
         </li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Link Text</a></li>
-        <li><a href="#">Long Link Text</a></li>
+        <li><a href="#">IoT Value</a></li>
+        <li><a class="drop" href="#">my Iot Plan</a>
+          <ul>
+            <li><a href="/todo">Todo List</a></li>
+            <li><a href="/todo">my IoT Calendar</a></li>
+          </ul>
+        </li>
+
       </ul>
       <!-- ################################################################################################ -->
     </nav>

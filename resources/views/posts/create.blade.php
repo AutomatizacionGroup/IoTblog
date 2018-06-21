@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="col-sm-8 blog-main">
+
         <h1>Publish a Post</h1>
 
         <hr>
@@ -33,5 +33,5 @@
         </form>
 
 
-    </div>
+
 @endsection

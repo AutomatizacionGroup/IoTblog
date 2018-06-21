@@ -30,4 +30,9 @@ class HomeController extends Controller
         return view('original');
     }
 
+    public function iothome()
+    {
+        return view('iothome');
+    }
+
 }
