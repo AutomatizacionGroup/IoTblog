@@ -13,6 +13,8 @@ Route::get  ('/home'                  ,'PostsController@home'          )->name('
 Route::get  ('/iotconsumer'           ,'PostsController@iothome'       )->name('iothome');
 Route::get  ('/iotindustry'           ,'PostsController@iotindustry'   )->name('iotindustry');
 Route::get  ('/iotvalue'              ,'PostsController@iotvalue'      )->name('iotvalue');
+Route::get  ('/original'            ,'homecontroller@original'      )->name('original');
+
 Auth::routes();
  
 Route::get('/home', 'HomeController@index')->name('home');
